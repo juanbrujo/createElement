@@ -21,8 +21,8 @@ document.querySelector(".advanced-demo").appendChild( advancedDemo );
 var firstItem = createElement("li","","List item 1"),
     secondItem = createElement("li","","List item 2"),
     thirdItem = createElement("li","","<b>List item 3</b>"),
-    container = createElement("div","[id:links]",[firstItem,secondItem,thirdItem]);
-document.querySelector(".nesting-demo").appendChild( container );
+    unorderedList = createElement("ul","[id:links]",[firstItem,secondItem,thirdItem]);
+document.querySelector(".nesting-demo").appendChild( unorderedList );
 ```
 
 ###Demo
