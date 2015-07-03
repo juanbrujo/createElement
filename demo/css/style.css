@@ -1,0 +1,22 @@
+body {
+	font-family: 'Dosis', sans-serif;
+	color: #2C3E50;
+}
+.dark {
+	background: #20202c;
+	background: 	linear-gradient(135deg, rgba(244,226,156,0) 0%,rgba(59,41,58,1) 100%),
+	linear-gradient(to right, rgba(244,226,156,1) 0%,rgba(130,96,87,1) 100%);
+	color: white;
+}
+.dark a {
+	color: #ECF0F1;
+/*	border: 2px solid #ECF0F1;
+	padding: 4px 12px;
+	line-height: 1;
+	text-decoration: none;
+	margin: 1px 2px;
+	text-transform: uppercase;*/
+}
+footer a {
+	color: #515175;
+}

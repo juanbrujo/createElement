@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>createElement</title>
+	<link href='http://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/libs/tachyons.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="wi-100">
+  <div class="dt pvx pvxl-ns dark">
+    <header class="bg-pulsate tc dtc wi-100 v-mid">
+      <div class="tc mbm mbn-ns">
+        <h1 class="f3 f2-m mega-ns b db-ns mrs mrn-ns mbn ttu mtn pulse-letters">
+          createElement
+        </h1>
+        <p class="f5 f3-ns dib db-ns fw1 phs mbn mbx-ns aqua">
+          Create HTML element using JavaScript
+          <small class="ws-nowrap db f5 mts mtm-ns">2.4kb (minified)</small>
+        </p>
+        </div>
+        <div class="pvm">
+           <a title="createElement.js" href="//github.com/juanbrujo/createElement.js"
+           class="small link tc br2 bw1 pas pam-ns btn--animated">View on Github ▸</a>
+        </div>
+      </div>
+    </header>
+  </div>
+  <main>
+    <section class="bg-near-white dt h-100 navy pvx pvxl-ns">
+      <div class="dtc v-mid">
+        <!--div class="mw7 center phm phl-ns tl tl-ns">
+          <h1 class="f4 ttu book">Install</h1>
+          <hr>
+          <section class="f4 f3-ns list pln lh-copy">
+            <article class="pvs">
+              <pre>$ npm install createElement</pre>
+              <pre>$ bower install createElement</pre>
+            </article>
+          </section>
+        </div-->
+        <div class="mw7 center phm phl-ns tl tl-ns">
+          <h1 class="f4 ttu book">Use</h1>
+          <hr>
+          <section class="f4 f3-ns list pln lh-copy">
+            <article class="pvs">
+              <pre>createElement("a","[href:http://google.com][style:color:#FFF;background:#333;]","Google");</pre>
+            </article>
+          </section>
+        </div>
+      </div>
+    </section>
+		<section class="bg-near-white dt h-100 dark pvx pvxl-ns">
+      <div class="dtc v-mid">
+    		<div class="mw7 center phm phl-ns tl tl-ns">
+          <h1 class="f4 ttu book">Live Demo</h1>
+          <hr>
+          <section class="f4 f3-ns list pln lh-copy">
+            <article class="pvs live-demo">
+              <label for="elemInput">HTML tag name you want to create:</label>
+              <input type="text" id="elemInput" name="elemInput" placeholder="ex. h1" style="width:60%" />
+              <button id="createButton">createElement</button>
+              <p>Output: </p>
+              <div id="elemOutput"></div>
+            </article>
+          </section>
+          <h1 class="f4 ttu book">Basic Demo:</h1>
+          <hr>
+          <section class="f4 f3-ns list pln lh-copy">
+            <article class="pvs basic-demo">
+            </article>
+          </section>
+          <h1 class="f4 ttu book">Advanced Demo:</h1>
+          <hr>
+          <section class="f4 f3-ns list pln lh-copy">
+            <article class="pvs advanced-demo">
+            </article>
+          </section>
+          <h1 class="f4 ttu book">Nesting:</h1>
+          <hr>
+          <section class="f4 f3-ns list pln lh-copy">
+            <article class="pvs nesting-demo">
+            </article>
+          </section>
+        </div>
+      </div>
+		</section>
+  </main>
+	<footer class="bg-white gray phm pvx pvxl-ns bt b--light-gray h-50">
+    <small class="f5 mw7 db center lh-copy">
+      <strong><a href="https://github.com/juanbrujo/createElement.js">createElement.js</a></strong> is released under <a href="//mit-license.org/">MIT License</a>
+      <br class="dn db-ns">
+      &copy; 2015 - Jorge Epuñan H. | <a href="http://www.twitter.com/csslab">@csslab</a>
+    </small>
+  </footer>
+
+	<script src="../dist/createElement.js"></script>
+	<script>
+
+  // LIVE DEMO
+  var inp = document.querySelector("#elemInput"),
+      but = document.querySelector("#createButton"),
+      out = document.querySelector("#elemOutput");
+
+  but.addEventListener("click",function(){
+    var tag = inp.value;
+
+    if(tag) {
+      var createdElem = createElement(tag,"","This &lt;" + tag + "&gt; is your newly created element");
+      out.innerHTML = "";
+      out.appendChild(createdElem);
+    }
+    
+  });
+
+  // DEMOS
+  var basicDemo = createElement("div", "[class:newDiv]", "I'm a new &lt;div&gt;");
+  document.querySelector(".basic-demo").appendChild( basicDemo );
+
+  var advancedDemo = createElement("a","[href:http://www.csslab.cl][style:background:#f00;]","CSSLab");
+  document.querySelector(".advanced-demo").appendChild( advancedDemo );
+
+  var firstItem = createElement("li","","List item 1"),
+      secondItem = createElement("li","","List item 2"),
+      thirdItem = createElement("li","","<b>List item 3</b>"),
+      container = createElement("div","[id:links]",[firstItem,secondItem,thirdItem]);
+  document.querySelector(".nesting-demo").appendChild( container );
+
+	</script>
+</body>
+</html>

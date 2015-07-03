@@ -1,0 +1,29 @@
+{
+	"name": "createElement",
+	"title": "createElement",
+	"homepage": "https://github.com/juanbrujo/createElement",
+	"description": "Create HTML elements using JavaScript",
+	"demo": "http://juanbrujo.github.io/createElement/",
+	"keywords": [
+		"javascript",
+    "HTML",
+    "element",
+    "create"
+	],
+	"version": "0.0.1",
+	"author": {
+		"name": "Jorge Epuñan H.",
+		"url": "https://github.com/juanbrujo",
+		"twitter": "@csslab"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://mit-license.org/",
+			"copyright": "©2015"
+		}
+	],
+	"bugs": "https://github.com/juanbrujo/createElement.js/issues",
+	"docs": "https://github.com/juanbrujo/createElement.js#readme",
+	"download": "https://github.com/juanbrujo/createElement.js/archive/master.zip"
+}
