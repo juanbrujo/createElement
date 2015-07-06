@@ -2,7 +2,7 @@
 
 > Create HTML elements using JavaScript
 
-![](images/createElement.png)
+![](https://raw.githubusercontent.com/juanbrujo/createElement/master/demo/images/createElement.png)
 
 ###Use
 
