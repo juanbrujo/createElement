@@ -6,6 +6,10 @@
 
 ![](https://raw.githubusercontent.com/juanbrujo/createElement/master/demo/images/createElement.png)
 
+###Install
+
+`$ bower install createElement`
+
 ###Use
 
 **Basic Demo:**
