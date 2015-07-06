@@ -1,5 +1,7 @@
 #createElement.js
 
+![Bower version](https://img.shields.io/bower/v/createElement.svg)
+
 > Create HTML elements using JavaScript
 
 ![](https://raw.githubusercontent.com/juanbrujo/createElement/master/demo/images/createElement.png)

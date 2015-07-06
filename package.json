@@ -11,7 +11,8 @@
     "javascript",
     "HTML",
     "element",
-    "create"
+    "create",
+    "DOM"
   ],
   "license": "MIT",
   "devDependencies": {
