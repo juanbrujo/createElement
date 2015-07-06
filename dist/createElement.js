@@ -31,9 +31,3 @@ var createElement = function() {
     }
     return InitCreateElement;
 }(this);
-
-"undefined" != typeof module && module.exports ? module.exports.createElement = function(name, val, result) {
-    return createElement(name, val, result);
-} : "undefined" != typeof define && define.amd && define([], function(name, val, result) {
-    return createElement(name, val, result);
-});

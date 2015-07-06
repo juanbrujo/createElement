@@ -2,6 +2,8 @@
 
 > Create HTML elements using JavaScript
 
+![](images/createElement.png)
+
 ###Use
 
 **Basic Demo:**

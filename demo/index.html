@@ -11,7 +11,7 @@
   <div class="dt pvx pvxl-ns dark">
     <header class="bg-pulsate tc dtc wi-100 v-mid">
       <div class="tc mbm mbn-ns">
-        <h1 class="f3 f2-m mega-ns b db-ns mrs mrn-ns mbn ttu mtn pulse-letters">
+        <h1 class="f3 mega-ns b db-ns mrs mrn-ns mbn ttu mtn pulse-letters">
           createElement
         </h1>
         <p class="f5 f3-ns dib db-ns fw1 phs mbn mbx-ns aqua">
@@ -66,18 +66,27 @@
           </section>
           <h1 class="f4 ttu book">Basic Demo:</h1>
           <hr>
+          <pre class="code"><code>var basicDemo = createElement("div", "[class:newDiv]", "I'm a new &lt;div&gt;");
+document.querySelector(".basic-demo").appendChild( basicDemo );</code></pre>
           <section class="f4 f3-ns list pln lh-copy">
             <article class="pvs basic-demo">
             </article>
           </section>
           <h1 class="f4 ttu book">Advanced Demo:</h1>
           <hr>
+          <pre class="code"><code>var advancedDemo = createElement("a","[href:http://www.csslab.cl][style:background:#f00;]","CSSLab");
+document.querySelector(".advanced-demo").appendChild( advancedDemo );</code></pre>
           <section class="f4 f3-ns list pln lh-copy">
             <article class="pvs advanced-demo">
             </article>
           </section>
           <h1 class="f4 ttu book">Nesting:</h1>
           <hr>
+          <pre class="code"><code>var firstItem = createElement("li","","List item 1"),
+    secondItem = createElement("li","","List item 2"),
+    thirdItem = createElement("li","","<b>List item 3</b>"),
+    unorderedList = createElement("ul","[id:links]",[firstItem,secondItem,thirdItem]);
+    document.querySelector(".nesting-demo").appendChild( unorderedList );</code></pre>
           <section class="f4 f3-ns list pln lh-copy">
             <article class="pvs nesting-demo">
             </article>

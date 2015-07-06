@@ -87,15 +87,3 @@ var createElement = ( function createElement() {
 
 })( this );
 
-if ( typeof module !== "undefined" && module.exports ) {
-  // export functions for use in Node
-  module.exports.createElement = function ( name, val, result ) {
-    return createElement( name, val, result );
-  };
-} else if ( typeof define !== "undefined" && define.amd ) {
-  // export function for use in AMD
-  define([], function ( name, val, result ) {
-    return createElement( name, val, result );
-  });
-}
-
