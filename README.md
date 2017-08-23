@@ -1,4 +1,4 @@
-#createElement.js
+# createElement.js
 
 ![Bower version](https://img.shields.io/bower/v/createElement.svg)
 
@@ -6,11 +6,11 @@
 
 ![](https://raw.githubusercontent.com/juanbrujo/createElement/master/demo/images/createElement.png)
 
-###Install
+### Install
 
 `$ bower install createElement`
 
-###Use
+### Use
 
 **Basic Demo:**
 ```
@@ -33,6 +33,6 @@ var firstItem = createElement("li","","List item 1"),
 document.querySelector(".nesting-demo").appendChild( unorderedList );
 ```
 
-###Demo
+### Demo
 
 [juanbrujo.github.io/createElement/](http://juanbrujo.github.io/createElement/)
